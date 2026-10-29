@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Lesotho Tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Lesotho Tourism</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <h1 class="text-center" style="color:white;">Book Your Trip</h1>
+      <p class="text-center" style="color:white;">Fill this form — we will contact you on WhatsApp</p>
+
+      <form id="bookingForm" class="bg-white p-4 rounded shadow-sm mt-4">
+        <!-- Text -->
+        <div class="mb-3">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required placeholder="e.g. Teboho Mokoena">
+        </div>
+
+        <!-- Email type REQUIRED -->
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required placeholder="you@gmail.com">
+        </div>
+
+        <!-- Password type REQUIRED-->
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" required placeholder="4 to 12 digits">
+        </div>
+
+
+        <!-- Tel type REQUIRED -->
+        <div class="mb-3">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" required placeholder="e.g. +266 12345678">
+        </div>
+
+        <!-- Number type REQUIRED -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Number of People</label>
+            <input type="number" class="form-control" min="1" max="20" value="1" required>
+          </div>
+
+          <!-- Date type REQUIRED -->
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Travel Date</label>
+            <input type="date" class="form-control" required>
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label class="form-label">Choose Package</label><br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="package" value="hiking" checked>
+            <label class="form-check-label">Mountain Hiking - M250</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="package" value="pony">
+            <label class="form-check-label">Pony Trekking - M400</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="package" value="cultural">
+            <label class="form-check-label">Cultural Tour - M300</label>
+          </div>
+        </div>
+
+      
+        <div class="mb-3">
+          <label class="form-label">Extra Services (Checkbox)</label><br>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="guide"> Need Local Guide
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="transport"> Need Transport from Maseru
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="food"> Include Traditional Food
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="3" placeholder="Tell us where you want to go..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-custom w-100">Submit Booking</button>
+      </form>
+
+      <section class="mt-5 text-center">
+        <h5 style="color:white;">Visit Us</h5>
+        <p style="color:white;">Maseru Mall, Maseru 100, Lesotho<br>
+        Email: info@lesothotourism.ls<br>
+        Phone: +266 2231 4567</p>
+        <a href="index.html" class="btn btn-outline-dark">Back to Home</a>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Lesotho Tourism - Mountain Kingdom_By Zuziwe  </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
